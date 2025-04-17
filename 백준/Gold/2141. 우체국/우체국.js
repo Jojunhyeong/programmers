@@ -14,7 +14,7 @@ village.sort((a, b) => a.x - b.x);
 
 // 총 인구 계산
 const total = village.reduce((acc, cur) => acc + cur.a, 0);
-const middle = Math.ceil(total / 2);
+const middle = total / 2;
 
 // 가중 중앙값 찾기
 let sum = 0;
