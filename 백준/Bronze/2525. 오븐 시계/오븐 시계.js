@@ -7,10 +7,7 @@ const C = parseInt(input[1]);
 if (B + C < 60){
     console.log(A, B+C);
 } else if (B + C >= 60){
-    A = (A + Math.floor((B + C) / 60));
-    if(A > 23) {
-        A = A - 24;
-    }
+    A = (A + Math.floor((B + C) / 60)) % 24;
 
     console.log(A, (B+C)%60);
 }
