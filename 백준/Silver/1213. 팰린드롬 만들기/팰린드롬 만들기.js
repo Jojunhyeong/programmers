@@ -20,7 +20,7 @@ while (i < arr.length) {
   if (cnt % 2 === 1) {
     if (center) {
       console.log("I'm Sorry Hansoo");
-      process.exit(0);
+      return;
     }
     center = ch;
   }
@@ -37,3 +37,4 @@ const right = [...left].reverse().join('');
 
 // 결과 출력
 console.log(left + center + right);
+
